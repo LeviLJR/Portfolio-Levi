@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio de Levi</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="navbar">
+      <nav class="navbar__menu">
+        <a href="./index.html" class="navbar__menu__link">Home</a>
+        <a href="./about.html" class="navbar__menu__link">About me</a>
+        <a href="./curriculum.html" class="navbar__menu__link">Curriculum</a>
+      </nav>
+    </header>
     <main class="introduction">
       <section class="introduction__content">
         <div class="introduction__content__highlight">
@@ -31,28 +37,32 @@
           </p>
         </div>
         <div class="introduction__links">
-          
+          <h2 class="introduction__links__subtitle">Acesse minhas redes:</h2>
           <a
             class="introduction__links__link"
             href="https://www.linkedin.com/in/leviljr/"
           >
-            <img />
+            <img src="./assets/linkedin.png" />
             Linkedin
           </a>
-          <a class="introduction__links__link" href="https://github.com/LeviLJR"
-            >GitHub</a
+          <a
+            class="introduction__links__link"
+            href="https://github.com/LeviLJR"
+          >
+            <img src="./assets/github.png" />
+            GitHub</a
           >
         </div>
       </section>
-      <section class="photo">
-        <img
-          class="photo-profile"
-          loading="lazy"
-          src="./perfil.jpeg"
-          alt="Levi's photo"
-        />
-      </section>
+      <img
+        class="photo-profile"
+        loading="lazy"
+        src="./assets/perfil.jpeg"
+        alt="Levi's photo"
+      />
     </main>
-    <footer></footer>
+    <footer class="footnote">
+      <p>Desenvolvido por Levi</p>
+    </footer>
   </body>
 </html>
